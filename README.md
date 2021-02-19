@@ -1,33 +1,83 @@
-# 1234567_FA2020_CSE486.1
-Sample Repository for all work in CSE486.1
-Clone this repository, rename it, make it private, create folder structure.
+# 1511400_FA2020_CSE486.1
 
-How to create your repository?
-
-<7 Digit Student ID>_FA2020_CSE486.1
-
-For Example, if your 7 digit student ID is 1911231, then your repository will be 1911231_FA2020_CSE486.1
+Repository for all work in CSE486.1
 
 Folder Structure:
 
-1911231_FA2020_CSE486.1
+1511400_SP2021_CSE486.1
 
-  |-------- Assignments
-  
-              |------------- Assignment 1
-              
-              |------------- Assignment 2
-              
-              |------------- Assignment 3
-              
-              |------------- Assignment 4
-              
-  |-------- Android Project
-  
+|-------- Lab
+
               |------------- README.md
-              
-              |------------- Project Code
-              
-                              
-  
-              
+
+              |------------- Lab 1
+
+              |------------- Lab 2
+
+              |------------- Lab 3
+
+              |------------- Lab 4
+
+              |------------- Lab 5
+
+              |------------- Lab 6
+
+              |------------- Lab 7
+
+              |------------- Lab 8
+
+              |------------- Lab 9
+
+              |------------- Lab 10
+
+              |------------- Lab 11
+
+              |------------- Lab 12
+
+              |------------- Lab 13
+
+|-------- Practice
+
+              |------------- README.md
+
+              |------------- Practice 001
+
+              |------------- Practice 002
+
+|-------- Project
+
+              |------------- README.md
+
+              |------------- Version01
+
+              |------------- Version02
+
+              |------------- Version03
+
+              |------------- Version04
+
+              |------------- Version05
+
+|-------- Theory
+
+              |------------- README.md
+
+              |------------- Assignment
+
+                            |------------- Assignment01
+
+                            |------------- Assignment02
+
+                            |------------- Assignment03
+
+                            |------------- Assignment04
+
+              |------------- Quiz
+
+                            |------------- Quiz01
+
+                            |------------- Quiz02
+
+                            |------------- Quiz03
+
+                            |------------- Quiz04
