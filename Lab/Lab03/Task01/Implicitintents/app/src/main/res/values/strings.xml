@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Implicit intents</string>
+    <string name="add_item">Add Item</string>
+    <string name="cheese">Cheese</string>
+    <string name="rice">Rice</string>
+    <string name="apple">Apple</string>
+    <string name="butter">Butter</string>
+    <string name="milk">Milk</string>
+    <string name="edittext_loc">Shwapno Express, Bashundhara Road</string>
+    <string name="button_loc">Open Location</string>
+</resources>
