@@ -1,0 +1,4 @@
+#Thu Mar 25 23:46:16 BDT 2021
+base.0=C\:\\Users\\Masud\\Desktop\\CSE486\\1511400-SP21-CSE486-S01\\Lab\\Lab04\\Task01\\SimpleCalc\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

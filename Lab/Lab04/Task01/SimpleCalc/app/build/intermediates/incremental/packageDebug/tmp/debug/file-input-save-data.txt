@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Mar 25 18:38:12 BDT 2021
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\Masud\\Desktop\\CSE486\\1511400-SP21-CSE486-S01\\Lab\\Lab04\\Task01\\SimpleCalc\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1
