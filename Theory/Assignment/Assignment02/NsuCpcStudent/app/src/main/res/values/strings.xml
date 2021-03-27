@@ -10,4 +10,8 @@
     <string name="std_reg_btn">Student Registration</string>
     <string name="std_list_btn">Student List</string>
     <string name="filter_search_btn">Filter Search</string>
+    <string name="hint_school">Select School</string>
+    <string name="hint_department">Select Department</string>
+    <string name="hint_mobile">Enter Mobile Number</string>
+
 </resources>
