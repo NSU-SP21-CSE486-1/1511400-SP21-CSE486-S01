@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Nsu Cpc Student</string>
+    <string name="hint_full_name">Enter full  name</string>
+    <string name="form_title">NSU CPC Registration</string>
+    <string name="hint_id">Enter 7 digit NSU ID</string>
+    <string name="hint_birth_date">Select date of birth</string>
+    <string name="hint_nsu_email">Enter NSU Email</string>
+    <string name="hint_nid">Enter NID Number</string>
+    <string name="button_next">Next</string>
+    <string name="std_reg_btn">Student Registration</string>
+    <string name="std_list_btn">Student List</string>
+    <string name="filter_search_btn">Filter Search</string>
 </resources>

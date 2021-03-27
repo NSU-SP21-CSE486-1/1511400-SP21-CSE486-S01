@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="slate_blue">#7165E3</color>
     <color name="medium_blue">#594CD2</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="input_back">#F7F7F7</color>
+    <color name="input_focus">#F7F7F7</color>
+    <color name="title">#1C1939</color>
 </resources>
