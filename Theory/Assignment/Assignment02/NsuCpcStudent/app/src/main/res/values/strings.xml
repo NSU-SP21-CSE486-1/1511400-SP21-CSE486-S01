@@ -7,11 +7,21 @@
     <string name="hint_nsu_email">Enter NSU Email</string>
     <string name="hint_nid">Enter NID Number</string>
     <string name="button_next">Next</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_previous">Previous</string>
     <string name="std_reg_btn">Student Registration</string>
     <string name="std_list_btn">Student List</string>
     <string name="filter_search_btn">Filter Search</string>
     <string name="hint_school">Select School</string>
     <string name="hint_department">Select Department</string>
     <string name="hint_mobile">Enter Mobile Number</string>
+    <string name="hint_road">Enter Road/Block/Sector</string>
+    <string name="hint_house">Enter House/Village/City</string>
+    <string name="hint_postcode">Enter Postal Code</string>
+    <string name="hint_police">Enter Police Station</string>
+    <string name="hint_post_office">Enter Post Office</string>
+    <string name="hint_district">Enter District</string>
+    <string name="hint_country">Enter Country</string>
+    <string name="present_address">Present Address</string>
 
 </resources>

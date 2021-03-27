@@ -9,31 +9,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NsuCpcStudent">
-        <activity android:name=".SearchFilter"
-            android:label = "Filter and Search"
-            android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".SuccessScreen"
+            android:label="Registration Completion"
+            android:parentActivityName=".RegistrationSecondStep">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.nsucpcstudent.MainActivity" />
+                android:value="com.example.nsucpcstudent.RegistrationSecondStep" />
         </activity>
-
-        <activity android:name=".StudentList"
-            android:label = "Student List"
-            android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".RegistrationSecondStep"
+            android:label="Student Registration"
+            android:parentActivityName=".RegistrationFirstStep">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.nsucpcstudent.MainActivity" />
+                android:value="com.example.nsucpcstudent.RegistrationFirstStep" />
         </activity>
-
-        <activity android:name=".RegistrationFirstStep"
-            android:label = "Student Registration"
+        <activity
+            android:name=".SearchFilter"
+            android:label="Filter and Search"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.example.nsucpcstudent.MainActivity" />
+                android:value="com.example.nsucpcstudent.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StudentList"
+            android:label="Student List"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nsucpcstudent.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RegistrationFirstStep"
+            android:label="Student Registration"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nsucpcstudent.MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

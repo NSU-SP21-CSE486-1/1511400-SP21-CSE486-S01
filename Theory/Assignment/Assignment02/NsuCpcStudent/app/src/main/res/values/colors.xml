@@ -13,4 +13,5 @@
     <color name="input_back">#F7F7F7</color>
     <color name="input_focus">#F7F7F7</color>
     <color name="title">#1C1939</color>
+    <color name="gray_title">#9EA6BE</color>
 </resources>
