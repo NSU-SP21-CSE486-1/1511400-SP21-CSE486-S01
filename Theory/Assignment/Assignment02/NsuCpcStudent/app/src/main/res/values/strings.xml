@@ -23,5 +23,6 @@
     <string name="hint_district">Enter District</string>
     <string name="hint_country">Enter Country</string>
     <string name="present_address">Present Address</string>
+    <string name="permanent_address">Permanent Address</string>
 
 </resources>

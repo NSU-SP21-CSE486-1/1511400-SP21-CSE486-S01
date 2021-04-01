@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="signin_title">Sign In</string>
+    <string name="logo_text">NSU CPC</string>
+    <string name="signin_sub">with email and password</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="toast_error">Wrong email or password!</string>
+    <string name="success_title">Login Success</string>
+</resources>
