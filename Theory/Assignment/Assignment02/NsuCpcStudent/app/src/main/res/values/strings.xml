@@ -24,5 +24,9 @@
     <string name="hint_country">Enter Country</string>
     <string name="present_address">Present Address</string>
     <string name="permanent_address">Permanent Address</string>
+    <string name="go_to_home">Go to Home</string>
+    <string name="account_created_successfully">Account Created Successfully!</string>
+    <string name="success_icon">Success_icon</string>
+    <string name="same_as_present">Same as present</string>
 
 </resources>
