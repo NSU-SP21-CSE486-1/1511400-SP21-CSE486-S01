@@ -14,13 +14,13 @@ public class StudentData {
     private int nsuId;
     private String school;
     private String department;
-    private Date birthDate;
+    private String birthDate;
     private String phoneNumber;
     private int nationalId;
-    @Embedded public Address presentAddress;
-    @Embedded public Address permanentAddress;
+    @Embedded public PresentAddress presentAddress;
+    @Embedded public PermanentAddress permanentAddress;
 
-    public StudentData(String fullName, int nsuId, String school, String department, Date birthDate, String phoneNumber, int nationalId, Address presentAddress, Address permanentAddress) {
+    public StudentData(String fullName, int nsuId, String school, String department, String birthDate, String phoneNumber, int nationalId, PresentAddress presentAddress, PermanentAddress permanentAddress) {
         this.fullName = fullName;
         this.nsuId = nsuId;
         this.school = school;
@@ -56,7 +56,7 @@ public class StudentData {
         return department;
     }
 
-    public Date getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
@@ -68,11 +68,11 @@ public class StudentData {
         return nationalId;
     }
 
-    public Address getPresentAddress() {
+    public PresentAddress getPresentAddress() {
         return presentAddress;
     }
 
-    public Address getPermanentAddress() {
+    public PermanentAddress getPermanentAddress() {
         return permanentAddress;
     }
 }

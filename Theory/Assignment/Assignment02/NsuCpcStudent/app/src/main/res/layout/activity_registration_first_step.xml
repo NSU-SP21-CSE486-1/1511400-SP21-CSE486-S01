@@ -139,6 +139,7 @@
         app:layout_constraintTop_toBottomOf="@+id/nid">
 
         <AutoCompleteTextView
+            android:id="@+id/select_school"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none" />
@@ -159,6 +160,7 @@
         app:layout_constraintTop_toBottomOf="@+id/school">
 
         <AutoCompleteTextView
+            android:id="@+id/select_department"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none" />
