@@ -20,7 +20,9 @@ public class StudentData {
     @Embedded public PresentAddress presentAddress;
     @Embedded public PermanentAddress permanentAddress;
 
-    public StudentData(String fullName, int nsuId, String school, String department, String birthDate, String phoneNumber, int nationalId, PresentAddress presentAddress, PermanentAddress permanentAddress) {
+//    public StudentData(String fullName, int nsuId, String school, String department, String birthDate, String phoneNumber, int nationalId, PresentAddress presentAddress, PermanentAddress permanentAddress) {
+
+    public StudentData(String fullName, int nsuId, String school, String department, String birthDate, String phoneNumber, int nationalId) {
         this.fullName = fullName;
         this.nsuId = nsuId;
         this.school = school;
@@ -28,8 +30,8 @@ public class StudentData {
         this.birthDate = birthDate;
         this.phoneNumber = phoneNumber;
         this.nationalId = nationalId;
-        this.presentAddress = presentAddress;
-        this.permanentAddress = permanentAddress;
+//        this.presentAddress = presentAddress;
+//        this.permanentAddress = permanentAddress;
     }
 
     public void setId(int id) {
@@ -68,11 +70,11 @@ public class StudentData {
         return nationalId;
     }
 
-    public PresentAddress getPresentAddress() {
-        return presentAddress;
-    }
-
-    public PermanentAddress getPermanentAddress() {
-        return permanentAddress;
-    }
+//    public PresentAddress getPresentAddress() {
+//        return presentAddress;
+//    }
+//
+//    public PermanentAddress getPermanentAddress() {
+//        return permanentAddress;
+//    }
 }
