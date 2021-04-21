@@ -44,8 +44,12 @@ public abstract class StudentDatabase extends RoomDatabase {
 
         @Override
         protected  Void doInBackground(Void... voids){
-            studentDao.insert(new StudentData("Md. Masud Rana", 15114000,"NSU","ece","11/11/2019","015454545",454544545));
-            studentDao.insert(new StudentData("Md. Rana Masud", 144542121,"NSU","ece","11/11/2019","015454545",454544545));
+            studentDao.insert(new StudentData("Md. Masud Rana", 1511400,"NSU","ece","11/11/2019","015454545",454544545));
+            studentDao.insert(new StudentData("John Doe", 1411511,"NSU","ece","11/11/2019","015454545",454544545));
+            studentDao.insert(new StudentData("John Doe", 1634586,"NSU","ece","11/11/2019","015454545",454544545));
+            studentDao.insert(new StudentData("Md. Rana Masud", 1917899,"NSU","ece","11/11/2019","015454545",454544545));
+            studentDao.insert(new StudentData("Md. Masud Rana", 2015544,"NSU","ece","11/11/2019","015454545",454544545));
+            studentDao.insert(new StudentData("Md. Rana Masud", 1534411,"NSU","ece","11/11/2019","015454545",454544545));
             return null;
         }
     }

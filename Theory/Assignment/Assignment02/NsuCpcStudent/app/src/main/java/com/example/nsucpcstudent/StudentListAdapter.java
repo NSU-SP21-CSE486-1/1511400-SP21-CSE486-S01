@@ -23,7 +23,7 @@ public class StudentListAdapter extends RecyclerView.Adapter<StudentListAdapter.
     @Override
     public void onBindViewHolder(@NonNull StudentListHolder holder, int position) {
         StudentData currentStudent = students.get(position);
-        holder.textViewId.setText(currentStudent.getFullName());
+        holder.textViewId.setText(String.valueOf(currentStudent.getNsuId()));
     }
 
     @Override

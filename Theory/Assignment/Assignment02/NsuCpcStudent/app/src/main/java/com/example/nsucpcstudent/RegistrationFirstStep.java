@@ -1,7 +1,12 @@
 package com.example.nsucpcstudent;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleEventObserver;
+import androidx.savedstate.SavedStateRegistry;
+import androidx.savedstate.SavedStateRegistryOwner;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,21 +22,37 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class RegistrationFirstStep extends AppCompatActivity {
+    private String fullName;
+    private int nsuId;
+    private String nsuEmail;
+    private String school;
+    private String department;
+    private String birthDate;
+    private String phoneNumber;
+    private int nationalId;
+
     private String[] schoolList;
     private String[] ScienceSchoolList;
     private String[] BusinessSchoolList;
     private String[] HumanSchoolList;
     private String[] HealthSchoolList;
-
     private AutoCompleteTextView schoolDropdown;
     private AutoCompleteTextView departmentDropdown;
-    private TextInputLayout valueSchool;
-    private TextInputLayout valueDepartment;
-    private String text;
 
+    private TextInputLayout valueFullName;
+    private TextInputLayout valueNsuId;
     private TextInputLayout valueDate;
     private TextInputEditText birthDateText;
+    private TextInputLayout valueNsuEmail;
+    private TextInputLayout valueNid;
+    private TextInputLayout valueSchool;
+    private TextInputLayout valueDepartment;
+    private TextInputLayout valueMobile;
+
+    private String text;
 
     private ArrayAdapter<String> departmentAdapter;
 
@@ -46,19 +67,21 @@ public class RegistrationFirstStep extends AppCompatActivity {
         HumanSchoolList= getResources().getStringArray(R.array.human_school_list);
         HealthSchoolList= getResources().getStringArray(R.array.health_school_list);
 
-        valueSchool=(TextInputLayout)findViewById(R.id.school);
-        valueDepartment=(TextInputLayout)findViewById(R.id.department);
+        valueFullName=(TextInputLayout)findViewById(R.id.full_name);
+        valueNsuId=(TextInputLayout)findViewById(R.id.nsu_id);
         valueDate=(TextInputLayout)findViewById(R.id.birth_date);
         birthDateText=(TextInputEditText)findViewById(R.id.birth_date_text);
+        valueNsuEmail=(TextInputLayout)findViewById(R.id.nsu_email);
+        valueNid=(TextInputLayout)findViewById(R.id.nid);
+        valueSchool=(TextInputLayout)findViewById(R.id.school);
+        valueDepartment=(TextInputLayout)findViewById(R.id.department);
+        valueMobile=(TextInputLayout)findViewById(R.id.mobile);
 
         schoolDropdown = (AutoCompleteTextView) findViewById(R.id.select_school);
         departmentDropdown = (AutoCompleteTextView) findViewById(R.id.select_department);
 
         ArrayAdapter<String> schoolAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.item_list,schoolList);
         schoolDropdown.setAdapter(schoolAdapter);
-
-//        departmentAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.item_list,departmentList);
-//        departmentDropdown.setAdapter(departmentAdapter);
 
         schoolDropdown.addTextChangedListener(new TextWatcher() {
             @Override
@@ -84,17 +107,21 @@ public class RegistrationFirstStep extends AppCompatActivity {
                 newFragment.show(getSupportFragmentManager(),"datePicker");
             }
         });
+
+//        if(savedInstanceState != null){
+//            valueFullName.getEditText().setText(savedInstanceState.getString("fullName"));
+//            valueNsuId.getEditText().setText(savedInstanceState.getInt("nsuId"));
+//            birthDateText.setText(savedInstanceState.getString("birthDate"));
+//            valueNsuEmail.getEditText().setText(savedInstanceState.getString("nsuEmail"));
+//            valueNid.getEditText().setText(savedInstanceState.getInt("nid"));
+//            valueSchool.getEditText().setText(savedInstanceState.getString("school"));
+//            valueDepartment.getEditText().setText(savedInstanceState.getString("department"));
+//            valueMobile.getEditText().setText(savedInstanceState.getString("mobile"));
+//        }
     }
 
 
-        public void launchSecondStepScreen (View view){
-//            Intent secondIntent = new Intent(this, RegistrationSecondStep.class);
-//            startActivity(secondIntent);
-            text = valueSchool.getEditText().getText().toString();
-            Toast toast = Toast.makeText(this, text,
-                    Toast.LENGTH_SHORT);
-            toast.show();
-        }
+
     public void setDepartment (String s){
         if(s.equals(schoolList[0]) ){
             departmentDropdown.getText().clear();
@@ -129,5 +156,40 @@ public class RegistrationFirstStep extends AppCompatActivity {
         String year_string = Integer.toString(year);
         String dateMessage = (month_string + "/" + day_string + "/" + year_string);
         birthDateText.setText(dateMessage);
+    }
+
+//    @Override
+//    public void onSaveInstanceState(Bundle outState){
+//        super.onSaveInstanceState(outState);
+//
+//        fullName=valueFullName.getEditText().getText().toString();
+//        nsuId=Integer.parseInt(valueNsuId.getEditText().getText().toString());
+//        birthDate=birthDateText.getText().toString();
+//        nsuEmail=valueNsuEmail.getEditText().getText().toString();
+//        nationalId= Integer.parseInt(valueNid.getEditText().getText().toString());
+//        school=valueSchool.getEditText().getText().toString();
+//        department=valueDepartment.getEditText().getText().toString();
+//        phoneNumber=valueMobile.getEditText().getText().toString();
+
+//        outState.putString("fullName",fullName);
+//        outState.putInt("nsuId", nsuId);
+//        outState.putString("birthDate",birthDate);
+//        outState.putString("nsuEmail",nsuEmail);
+//        outState.putInt("nid",nationalId);
+//        outState.putString("school",school);
+//        outState.putString("department",department);
+//        outState.putString("mobile",phoneNumber);
+//    }
+
+    public void launchSecondStepScreen (View view ){
+
+
+        Intent secondIntent = new Intent(this, RegistrationSecondStep.class);
+        startActivity(secondIntent);
+
+
+//        Toast toast = Toast.makeText(this, text,
+//                Toast.LENGTH_SHORT);
+//        toast.show();
     }
 }
