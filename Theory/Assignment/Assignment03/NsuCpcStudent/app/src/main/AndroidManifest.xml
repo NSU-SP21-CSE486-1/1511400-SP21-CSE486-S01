@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nsucpcstudent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NsuCpcStudent">
+        <activity
+            android:name=".SuccessScreen"
+            android:label="Registration Completion"
+            android:parentActivityName=".RegistrationSecondStep">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nsucpcstudent.RegistrationSecondStep" />
+        </activity>
+        <activity
+            android:name=".RegistrationSecondStep"
+            android:label="Student Registration"
+            android:parentActivityName=".RegistrationFirstStep">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nsucpcstudent.RegistrationFirstStep" />
+        </activity>
+        <activity
+            android:name=".SearchFilter"
+            android:label="Filter and Search"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nsucpcstudent.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StudentList"
+            android:label="Student List"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nsucpcstudent.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RegistrationFirstStep"
+            android:label="Student Registration"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nsucpcstudent.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

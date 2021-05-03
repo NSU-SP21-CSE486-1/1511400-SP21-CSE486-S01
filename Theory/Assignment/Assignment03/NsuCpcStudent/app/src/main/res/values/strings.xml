@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Nsu Cpc Student</string>
+    <string name="hint_full_name">Enter full  name</string>
+    <string name="form_title">NSU CPC Registration</string>
+    <string name="hint_id">Enter 7 digit NSU ID</string>
+    <string name="hint_birth_date">Select date of birth</string>
+    <string name="hint_nsu_email">Enter NSU Email</string>
+    <string name="hint_nid">Enter NID Number</string>
+    <string name="button_next">Next</string>
+    <string name="button_submit">Submit</string>
+    <string name="button_previous">Previous</string>
+    <string name="std_reg_btn">Student Registration</string>
+    <string name="std_list_btn">Student List</string>
+    <string name="filter_search_btn">Filter Search</string>
+    <string name="hint_school">Select School</string>
+    <string name="hint_department">Select Department</string>
+    <string name="hint_mobile">Enter Mobile Number</string>
+    <string name="hint_road">Enter Road/Block/Sector</string>
+    <string name="hint_house">Enter House/Village/City</string>
+    <string name="hint_postcode">Enter Postal Code</string>
+    <string name="hint_police">Enter Police Station</string>
+    <string name="hint_post_office">Enter Post Office</string>
+    <string name="hint_district">Enter District</string>
+    <string name="hint_country">Enter Country</string>
+    <string name="present_address">Present Address</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="go_to_home">Go to Home</string>
+    <string name="account_created_successfully">Account Created Successfully!</string>
+    <string name="success_icon">Success_icon</string>
+    <string name="same_as_present">Same as present</string>
+    <string name="country_code">+88</string>
+    <string-array name="schools_list">
+        <item>School of Business &amp; Economics</item>
+        <item>School of Engineering &amp; Physical Sciences</item>
+        <item>School of Humanities &amp; Social Sciences</item>
+        <item>School of Health &amp; Life Sciences</item>
+    </string-array>
+    <string-array name="business_school_list">
+        <item>Accounting &amp; Finance</item>
+        <item>Economics</item>
+        <item>Management</item>
+        <item>Marketing &amp; International Business</item>
+        <item>MBA &amp; EMBA Programs</item>
+    </string-array>
+    <string-array name="science_school_list">
+        <item>Architecture</item>
+        <item>Civil &amp; Environmental Engineering</item>
+        <item>Electrical &amp; Computer Engineering</item>
+        <item>Mathematics &amp; Physics</item>
+    </string-array>
+    <string-array name="human_school_list">
+        <item>English &amp; Modern Languages</item>
+        <item>Political Science &amp; Sociology</item>
+        <item>Law</item>
+        <item>History &amp; Philosophy</item>
+    </string-array>
+    <string-array name="health_school_list">
+        <item>Biochemistry &amp; Microbiology</item>
+        <item>Environmental Science &amp; Management</item>
+        <item>Pharmaceutical Sciences</item>
+        <item>Public Health</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
